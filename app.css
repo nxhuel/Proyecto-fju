@@ -1,0 +1,239 @@
+img, figure{
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.imgredonda {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    box-sizing: content-box;
+    vertical-align: baseline;
+}
+
+li {
+    list-style-type: none;
+}
+
+:root {
+    --blanco: #e0e0e0;
+    --blanco-2: rgba(255,255,255,.2);
+    --negro: #181818;
+    --negro-5: rgba(0, 0, 0, 0.5);
+    --negro-7: rgba(0, 0, 0, 0.75);
+    --fuente-titular:'Playfair Display', serif;
+    --fuente-principal:'Inter', sans-serif;
+    }
+
+body {
+    font-family: var(--fuente-principal);
+    font-size: 100%;
+    min-height: 100vh;
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+p a {
+    display: inline;
+}
+
+h1, h2, h3, h4 {
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+.main {
+    background: var(--negro-7);
+    margin: 0 0 1em;
+    text-align: center;
+    position: relative;
+}
+
+.seccion {
+    width: 100%;
+    min-height: 80vh;
+    padding: 2em;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    font-size: 1.2em;
+}
+
+.seccion ul {
+    margin: 2em 0 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion ul li {
+    margin: 0 1em;
+}
+
+.seccion ul a{
+    border:1px solid rgba(255,255,255,.2);
+    border-radius: 50%;
+    padding: 1em 1em 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .5s ease;
+}
+
+.seccion ul a:hover{
+    border-color: var(--blanco);
+}
+
+@keyframes aparecer {
+    from{
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.info {
+    font-size: 1.2em;
+    animation: aparecer 2s ease 1 both;
+}
+
+.seccion .ul .a {
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 50%;
+    padding: 1em 1em 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .5s ease;
+    animation: aparecer 2s ease 1 backwards;
+}
+
+.seccion .ul>:nth-chil(2) .a{
+    animation-delay: .2s;
+}
+
+.seccion h2 {
+    font-family: var(--fuente-titular);
+    font-weight: 600;
+    font-size: 5em;
+    line-height:1em;
+    color:var(--blanco);
+}
+
+.seccion h3 {
+    font-family: var(--fuente-titular);
+    font-size: 4.3em;
+}
+
+.about h2 {
+    margin: 0 0 2rem;
+}
+
+.about p {
+    max-width: 40rem;
+    margin: 0 0 2rem;
+    font-size: 1.1em ;
+    text-align: left;
+}
+
+.works {
+    color:var(--blanco);
+}
+
+.works h2 {
+    margin: 0 0 1rem;
+    color:inherit;
+}
+
+.works h4 {
+    width:100%;
+    height: 100%;
+    background-color: var(--negro-5);
+    backdrop-filter: blur(1rem);
+    position: absolute;
+    bottom:0;
+    left:0;
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: center;
+    align-items: center;
+    color:var(--blanco);
+    font-size: 1.8em;
+    font-family: var(--fuente-titular);
+    font-style: italic;
+    opacity: 0;
+    transform:translateZ(1) scale(1.5);
+    transition: all .5s ease;
+}
+
+.seccion article {
+    width: 100%;
+    min-height: 20vh;
+    background: var(--negro);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1em;
+}
+
+.seccion article:hover h4 {
+    opacity: 1;
+    transform:translateZ(1) scale(1);
+}
+
+.seccion .grid {
+    width: 90%;
+    max-width: 40em;
+    margin: 1em 0;
+    display: grid;
+    grid-template-columns: repeat( auto-fit , minmax( 15rem , 1fr) );
+    gap:1em;
+}
+
+footer {
+    padding:2em 0;
+    text-align: center;
+    color:var(--blanco);
+    position: relative;
+    z-index: 2;
+}
+
+footer ul {
+    width:100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer li {
+    margin: 0 1em;
+}
+
+footer svg {
+    width:3em;
+    height:3em;
+}
