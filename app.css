@@ -45,6 +45,7 @@ body {
     min-height: 100vh;
     background-color: var(--negro);
     color: var(--blanco);
+    cursor: none;
 }
 
 a {
@@ -128,6 +129,23 @@ h1, h2, h3, h4 {
     to {
         transform: rotate(350deg) scale(2);
     }
+}
+
+#cursor {
+    width: 5em;
+    height: 5em;
+    background-color: var(--blanco);
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 3;
+    pointer-events: none;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+}
+
+.mini {
+    transform: scale(0.7);
 }
 
 .circulos{
