@@ -163,6 +163,7 @@ h1, h2, h3, h4 {
     position: absolute;
     width: 50%;
     height: 50%;
+    filter: blur(10px);
     animation: animacioncirculo 30s linear infinite both;
 }
 
