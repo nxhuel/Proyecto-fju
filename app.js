@@ -1,8 +1,7 @@
-function movimientoDeMouseBody () {
+function movimientoDeMouseBody() {
     const body = document.querySelector('body');
     body.addEventListener('mousemove', moverPosiciónCursor);
 }
-
 function moverPosiciónCursor(e) {
     const cursor = document.getElementById('cursor');
     cursor.style.left = e.clientX + 'px';
