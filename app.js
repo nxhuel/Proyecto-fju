@@ -9,7 +9,7 @@ function moverPosiciónCursor(e) {
     cursor.style.top = (e.clientY - 40) + 'px';
 }
 
-function agregarMouseOver {
+function agregarMouseOver() {
     document.getElementById('cursor').classList.add('mini');
 }
 
