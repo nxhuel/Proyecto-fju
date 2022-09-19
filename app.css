@@ -46,13 +46,13 @@ body {
     background-color: var(--negro);
     color: var(--blanco);
     cursor: none;
-    addEventListener(index)
 }
 
 a {
     display: block;
     text-decoration: none;
     color: inherit;
+    cursor: none;
 }
 
 p a {
@@ -143,10 +143,11 @@ h1, h2, h3, h4 {
     pointer-events: none;
     border-radius: 50%;
     mix-blend-mode: difference;
+    cursor: none;
 }
 
 .mini {
-    transform: scale(0.1);
+    transform: scale(0.7);
 }
 
 .circulos{
