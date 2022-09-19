@@ -17,7 +17,7 @@ function agregarMouseOut() {
 }
 
 function agregarMovimientoSobreBotones() {
-    const botonesA = document.getElementsByClassName('a');
+    const botonesA = document.getElementsByTagName('a');
     for (let index = 0; index < botonesA.length; index++) {
         const botonA = botonesA[index];
         botonA.addEventListener('mouseover', agregarMouseOver);
